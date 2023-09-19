@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>tp2</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
-    <link rel="stylesheet" type="text/css" href="assets/css/s/style.css">
+    <title><?php echo($titulo);?></title>
+    <link href=<?php echo('assets/css/bootstrap.min.css');?> rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href=<?php echo('assets/css/s/style.css');?>>
   </head>
   <header>
   	<section class="">
