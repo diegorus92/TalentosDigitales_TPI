@@ -35,7 +35,12 @@ $routes->get('quienes_somos', 'Home::quienes_somos');
 $routes->get('acerca_de', 'Home::acerca_de');
 $routes->get('registrarse', 'Home::registrarse');
 $routes->get('login', 'Home::login');
-$routes->get('login', 'Home::registrarse');
+
+//routes for User register
+$routes->get('/registrarse', 'usuario_Controller::create');
+$routes->post('/enviar-form', 'usuario_Controller::formValidation');
+
+//routes for Login
 
 /*
  * --------------------------------------------------------------------
