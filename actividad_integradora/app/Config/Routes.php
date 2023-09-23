@@ -41,6 +41,10 @@ $routes->get('/registrarse', 'usuario_Controller::create');
 $routes->post('/enviar-form', 'usuario_Controller::formValidation');
 
 //routes for Login
+$routes->get('/login', 'login_Controller');
+$routes->post('/enviar-login', 'login_Controller::auth');
+$routes->get('/panel', 'panel_Controller::index', ['filter' => 'auth']);
+$routes->get('/logout', 'login_Controller::logout');
 
 /*
  * --------------------------------------------------------------------
